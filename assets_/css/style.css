@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+/*Section 1 starts*/
+.section-study{
+    display: flex;
+    gap: 50px;
+    margin: 100px;
+    position: relative;
+}
+.study-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.section-study-texts{
+    display: flex;
+    flex-direction: column ;
+    gap: 80px;
+}
+.box-split{
+    display: flex;
+    gap: 0;
+}
+.box{
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 1px solid  #B2B2B2;
+  transition: all 0.3s;
+  padding: 20px;
+  border: 1px solid #D6E4E5;
+}
+
+
+
+.box-digital:hover{
+    background:#93C6E7;
+}
+
+.box-dizayn:hover{
+    background:#AD7BE9;
+}
+
+.box-cs:hover{
+    background:#F99417;
+}
+
+.box-programming:hover{
+    background:#00425A;
+
+}
+
+.computer-icon{
+  font-size: 80px;
+}
+.box:hover{
+  cursor:pointer;
+  transform:scale(1.05);
+
+}
+
+.box:hover .box-programming-text{
+  color: #fff;
+}
+.box-programming-text{
+  position: absolute;
+  font-size: 20px;
+  left: 20px;
+  bottom: 20px;
+  font-weight: bold;
+}
+
+.section-1-titles::after{
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: 70%;
+    border-radius: 30%;
+    background: #A084DC;
+  }
+  
+/*Section 1 ends*/
+
+
+
+/*Section 2 starts*/
+.box-2{
+  position:relative;
+  width: 550px;
+  height: 250px;
+  padding:20px;
+  margin: 50px;
+}
+.box-2-titles, .section-1-titles{
+  display: flex;
+  flex-direction: column;
+}
+.box-2-title, .section-1-title{
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+.box-2-bold-title, .section-1-bold-title{
+  font-size: 35px;
+
+  font-weight: bold;
+}
+
+.box-2-titles::after{
+  content: "";
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  border-radius: 30%;
+  background: #A084DC;
+}
+
+.box-2-main-text{
+  position: absolute;
+  bottom: 20px;
+}
+/*Section 2 ends*/
+
+@media screen and (max-width: 800px) {
+    .box-split{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .section-1-titles::after{
+        content: "";
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: 83%;
+        border-radius: 30%;
+        background: #A084DC;
+      }
+      
+
+}
